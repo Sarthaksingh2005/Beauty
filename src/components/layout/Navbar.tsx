@@ -177,8 +177,14 @@ export default function Navbar() {
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary-container to-rose-gold flex items-center justify-center">
               <Sparkles className="w-4 h-4 text-white" />
             </div>
-            <span className="font-heading font-black text-xl text-on-surface tracking-tight">
-              BE <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-container to-rose-gold">YOU</span>
+            <span className="flex items-baseline gap-[2px]">
+              <span style={{fontFamily: '"Playfair Display", serif', fontStyle: 'italic', fontWeight: 900}} className="text-2xl text-on-surface tracking-tight">
+                BE
+              </span>
+              <span style={{fontFamily: '"Playfair Display", serif', fontStyle: 'italic', fontWeight: 900, background: 'linear-gradient(135deg, #d91c5c 0%, #f4a0c0 60%, #c2527f 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}} className="text-2xl">
+                &nbsp;YOU
+              </span>
+              <span className="text-primary text-lg ml-0.5 mb-0.5">✦</span>
             </span>
           </Link>
 
@@ -233,8 +239,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between px-5 h-14">
           <Link href="/" className="flex items-center gap-2">
             <Sparkles className="w-5 h-5 text-primary-container" />
-            <span className="font-heading font-black text-lg text-on-surface tracking-tight">
-              BE <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-container to-rose-gold">YOU</span>
+            <span className="flex items-baseline gap-[2px]">
+              <span style={{fontFamily: '"Playfair Display", serif', fontStyle: 'italic', fontWeight: 900}} className="text-xl text-on-surface tracking-tight">
+                BE
+              </span>
+              <span style={{fontFamily: '"Playfair Display", serif', fontStyle: 'italic', fontWeight: 900, background: 'linear-gradient(135deg, #d91c5c 0%, #f4a0c0 60%, #c2527f 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}} className="text-xl">
+                &nbsp;YOU
+              </span>
+              <span className="text-primary text-base ml-0.5">✦</span>
             </span>
           </Link>
           <div className="flex items-center gap-2">

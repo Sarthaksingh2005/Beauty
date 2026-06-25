@@ -12,8 +12,14 @@ export default function Footer() {
               <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-primary-container to-rose-gold flex items-center justify-center">
                 <Sparkles className="w-5 h-5 text-white" />
               </div>
-              <span className="font-heading font-black text-2xl text-on-surface tracking-tight">
-                BE <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-container to-rose-gold">YOU</span>
+              <span className="flex items-baseline gap-[2px]">
+                <span style={{fontFamily: '"Playfair Display", serif', fontStyle: 'italic', fontWeight: 900}} className="text-2xl text-on-surface tracking-tight">
+                  BE
+                </span>
+                <span style={{fontFamily: '"Playfair Display", serif', fontStyle: 'italic', fontWeight: 900, background: 'linear-gradient(135deg, #d91c5c 0%, #f4a0c0 60%, #c2527f 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}} className="text-2xl">
+                  &nbsp;YOU
+                </span>
+                <span className="text-primary text-lg ml-0.5">✦</span>
               </span>
             </Link>
             <p className="text-sm text-on-surface-variant leading-relaxed mb-6">
