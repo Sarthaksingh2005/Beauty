@@ -27,7 +27,7 @@ export default function Home() {
               <span>AI-Powered Beauty Marketplace</span>
             </div>
             <h1 className="font-heading font-bold text-5xl md:text-7xl text-on-surface leading-[1.1] tracking-tight">
-              Elevate Your <br />
+              Mumbai's Premier <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-container to-rose-gold">
                 Beauty Journey
               </span>
@@ -56,7 +56,7 @@ export default function Home() {
               <MapPin className="w-5 h-5 text-outline" />
               <input 
                 type="text" 
-                placeholder="Current Location" 
+                placeholder="Mumbai, IN" 
                 className="bg-transparent border-none outline-none w-full text-on-surface placeholder:text-outline-variant font-medium"
               />
             </div>
@@ -209,7 +209,7 @@ export default function Home() {
                       <Sparkles className="w-3 h-3 text-white" />
                     </div>
                     <div className="bg-white border border-outline-variant/20 rounded-2xl rounded-tl-sm p-3 shadow-sm text-sm text-on-surface">
-                      I noticed your skin has been dry lately. I recommend a hydrating facial. Here are the top rated ones near you!
+                      I noticed your skin has been dry lately from the Mumbai humidity. I recommend a hydrating facial. Here are the top rated ones near you!
                     </div>
                   </div>
                   <div className="glass-card p-3 ml-9 max-w-[85%] flex items-center gap-3">

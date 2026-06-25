@@ -2,45 +2,45 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Aura & Gilded Luxe Color System */
-  --color-background: #fbf9f8;
-  --color-surface: #fbf9f8;
-  --color-surface-dim: #dcd9d9;
-  --color-surface-bright: #fbf9f8;
+  /* Barbie Pink & Rose Gold Luxury Color System */
+  --color-background: #fdfafb;
+  --color-surface: #fdfafb;
+  --color-surface-dim: #ebdce2;
+  --color-surface-bright: #fdfafb;
   --color-surface-container-lowest: #ffffff;
-  --color-surface-container-low: #f6f3f2;
-  --color-surface-container: #f0eded;
-  --color-surface-container-high: #eae8e7;
-  --color-surface-container-highest: #e4e2e1;
-  --color-on-surface: #1b1c1c;
-  --color-on-surface-variant: #4d4635;
-  --color-inverse-surface: #303030;
-  --color-inverse-on-surface: #f3f0f0;
-  --color-outline: #7f7663;
-  --color-outline-variant: #d0c5af;
-  --color-surface-tint: #735c00;
-  --color-primary: #735c00;
+  --color-surface-container-low: #faeff3;
+  --color-surface-container: #f7e6ec;
+  --color-surface-container-high: #f4dce4;
+  --color-surface-container-highest: #f0d1db;
+  --color-on-surface: #2b1c22;
+  --color-on-surface-variant: #534349;
+  --color-inverse-surface: #3e2d33;
+  --color-inverse-on-surface: #feeff4;
+  --color-outline: #857379;
+  --color-outline-variant: #d8c2c8;
+  --color-surface-tint: #b81d68;
+  --color-primary: #d91c5c;
   --color-on-primary: #ffffff;
-  --color-primary-container: #d4af37;
-  --color-on-primary-container: #554300;
-  --color-inverse-primary: #e9c349;
-  --color-secondary: #7c5542;
+  --color-primary-container: #ffd9e4;
+  --color-on-primary-container: #3f0017;
+  --color-inverse-primary: #ffb1c8;
+  --color-secondary: #c2527f;
   --color-on-secondary: #ffffff;
-  --color-secondary-container: #fdc9b0;
-  --color-on-secondary-container: #79533f;
-  --color-tertiary: #685d4a;
+  --color-secondary-container: #ffd9e5;
+  --color-on-secondary-container: #3e001d;
+  --color-tertiary: #df7b9c;
   --color-on-tertiary: #ffffff;
-  --color-tertiary-container: #bfb19a;
-  --color-on-tertiary-container: #4e4432;
+  --color-tertiary-container: #ffdfeb;
+  --color-on-tertiary-container: #4c0022;
   --color-error: #ba1a1a;
   --color-on-error: #ffffff;
   --color-error-container: #ffdad6;
   --color-on-error-container: #93000a;
-  --color-primary-fixed: #ffe088;
-  --color-primary-fixed-dim: #e9c349;
-  --color-on-primary-fixed: #241a00;
-  --color-gold: #d4af37;
-  --color-rose-gold: #e5b39b;
+  --color-primary-fixed: #ffd9e4;
+  --color-primary-fixed-dim: #ffb1c8;
+  --color-on-primary-fixed: #3f0017;
+  --color-gold: #f48fb1;
+  --color-rose-gold: #ffb1c8;
 
   /* Typography */
   --font-heading: 'Montserrat', sans-serif;
@@ -68,8 +68,8 @@ html {
 }
 
 body {
-  background-color: #fbf9f8;
-  color: #1b1c1c;
+  background-color: #fdfafb;
+  color: #2b1c22;
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -88,12 +88,12 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(212, 175, 55, 0.08), 0 2px 8px rgba(0,0,0,0.04);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(217, 28, 92, 0.08), 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .glass-panel-dark {
-  background: rgba(27, 28, 28, 0.7);
+  background: rgba(43, 28, 34, 0.7);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -103,14 +103,14 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(208, 197, 175, 0.3);
-  box-shadow: 0 4px 24px rgba(212, 175, 55, 0.06), 0 1px 4px rgba(0,0,0,0.05);
+  border: 1px solid rgba(244, 143, 177, 0.3);
+  box-shadow: 0 4px 24px rgba(217, 28, 92, 0.06), 0 1px 4px rgba(0,0,0,0.05);
   border-radius: 1.5rem;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .glass-card:hover {
-  box-shadow: 0 12px 40px rgba(212, 175, 55, 0.14), 0 4px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 12px 40px rgba(217, 28, 92, 0.14), 0 4px 12px rgba(0,0,0,0.06);
   transform: translateY(-2px);
 }
 
@@ -118,8 +118,8 @@ h1, h2, h3, h4, h5, h6 {
    BUTTON GRADIENTS
    ============================================ */
 .btn-gold {
-  background: linear-gradient(135deg, #d4af37 0%, #e5b39b 100%);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.35), 0 4px 16px rgba(212, 175, 55, 0.28);
+  background: linear-gradient(135deg, #d91c5c 0%, #ffb1c8 100%);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.35), 0 4px 16px rgba(217, 28, 92, 0.35);
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-gold:hover {
   opacity: 0.92;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.35), 0 6px 24px rgba(212, 175, 55, 0.38);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.35), 0 6px 24px rgba(217, 28, 92, 0.45);
 }
 
 .btn-gold:active {
@@ -140,8 +140,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-outline-gold {
   background: transparent;
-  border: 1.5px solid #d4af37;
-  color: #735c00;
+  border: 1.5px solid #d91c5c;
+  color: #d91c5c;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -151,17 +151,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-outline-gold:hover {
-  background: rgba(212, 175, 55, 0.08);
-  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.12);
+  background: rgba(217, 28, 92, 0.08);
+  box-shadow: 0 0 0 3px rgba(217, 28, 92, 0.12);
 }
 
 /* ============================================
    BADGE STYLES
    ============================================ */
 .badge-ai {
-  background: linear-gradient(135deg, rgba(212,175,55,0.15) 0%, rgba(229,179,155,0.15) 100%);
-  border: 1px solid rgba(212,175,55,0.4);
-  color: #735c00;
+  background: linear-gradient(135deg, rgba(217, 28, 92, 0.15) 0%, rgba(255, 177, 200, 0.15) 100%);
+  border: 1px solid rgba(217, 28, 92, 0.4);
+  color: #b81d68;
   font-family: 'Inter', sans-serif;
   font-size: 11px;
   font-weight: 600;
@@ -175,9 +175,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .badge-top-rated {
-  background: rgba(124, 85, 66, 0.1);
-  border: 1px solid rgba(124, 85, 66, 0.3);
-  color: #7c5542;
+  background: rgba(194, 82, 127, 0.1);
+  border: 1px solid rgba(194, 82, 127, 0.3);
+  color: #c2527f;
   font-family: 'Inter', sans-serif;
   font-size: 11px;
   font-weight: 600;
@@ -191,8 +191,8 @@ h1, h2, h3, h4, h5, h6 {
    STAR RATINGS
    ============================================ */
 .star-gold {
-  color: #d4af37;
-  filter: drop-shadow(0 0 3px rgba(212,175,55,0.4));
+  color: #f48fb1;
+  filter: drop-shadow(0 0 3px rgba(244, 143, 177, 0.4));
 }
 
 /* ============================================
@@ -262,7 +262,7 @@ h1, h2, h3, h4, h5, h6 {
    SKELETON LOADER
    ============================================ */
 .skeleton {
-  background: linear-gradient(90deg, #f0eded 25%, #e4e2e1 50%, #f0eded 75%);
+  background: linear-gradient(90deg, #f7e6ec 25%, #f0d1db 50%, #f7e6ec 75%);
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite;
   border-radius: 0.5rem;
@@ -273,8 +273,8 @@ h1, h2, h3, h4, h5, h6 {
    ============================================ */
 ::-webkit-scrollbar { width: 4px; height: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: #d0c5af; border-radius: 9999px; }
-::-webkit-scrollbar-thumb:hover { background: #d4af37; }
+::-webkit-scrollbar-thumb { background: #f0d1db; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #f48fb1; }
 
 /* ============================================
    CUSTOM SCROLLBAR FOR HORIZONTAL
@@ -286,12 +286,12 @@ h1, h2, h3, h4, h5, h6 {
    INPUT FOCUS GOLD RING
    ============================================ */
 .input-gold {
-  background: #f6f3f2;
-  border: 1.5px solid #d0c5af;
+  background: #faeff3;
+  border: 1.5px solid #f4dce4;
   border-radius: 9999px;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
-  color: #1b1c1c;
+  color: #2b1c22;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
   outline: none;
   width: 100%;
@@ -299,18 +299,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .input-gold:focus {
-  border-color: #d4af37;
-  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+  border-color: #f48fb1;
+  box-shadow: 0 0 0 3px rgba(244, 143, 177, 0.15);
 }
 
-.input-gold::placeholder { color: #7f7663; }
+.input-gold::placeholder { color: #857379; }
 
 /* ============================================
    SELECTION
    ============================================ */
 ::selection {
-  background: rgba(212,175,55,0.25);
-  color: #1b1c1c;
+  background: rgba(217, 28, 92, 0.25);
+  color: #2b1c22;
 }
 
 /* ============================================
@@ -337,7 +337,7 @@ h1, h2, h3, h4, h5, h6 {
 .recharts-cartesian-axis-tick-value {
   font-family: 'Inter', sans-serif;
   font-size: 12px;
-  fill: #4d4635;
+  fill: #534349;
 }
 
 /* ============================================
@@ -356,5 +356,5 @@ h1, h2, h3, h4, h5, h6 {
    ============================================ */
 .divider-gold {
   height: 0.5px;
-  background: linear-gradient(90deg, transparent, #d0c5af, transparent);
+  background: linear-gradient(90deg, transparent, #f0d1db, transparent);
 }
