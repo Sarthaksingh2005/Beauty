@@ -3,39 +3,53 @@ import { AIMessage } from '@/types';
 export const INITIAL_AI_MESSAGE: AIMessage = {
   id: 'msg-0',
   role: 'ai',
-  content: "Hello! I am your Lumière AI Assistant.\n\nTo give you the best recommendations, could you tell me what you need help with today?",
+  content: "Hello! I am your Lumière AI Beauty Assistant. 💫\n\nI can help you find the perfect salon or service tailored to your needs.\n\nWhat are you looking for today?",
   timestamp: new Date().toISOString(),
-  prompts: ['Hair', 'Nails', 'Makeup', 'Skincare'],
+  prompts: ['Hair', 'Nails', 'Makeup', 'Skincare', 'Spa & Massage', 'Bridal Couture'],
 };
 
 export const AI_RESPONSES: Record<string, AIMessage> = {
   'Hair': {
     id: 'ai-hair',
     role: 'ai',
-    content: 'Hair care is essential! What specifically are you looking for?',
+    content: 'Great choice! ✂️ What are you looking for with your hair?',
     timestamp: new Date().toISOString(),
     prompts: ['Best in category (Premium)', 'Cost effective (Budget)', 'Trending Haircuts']
   },
   'Nails': {
     id: 'ai-nails',
     role: 'ai',
-    content: 'Perfect! Are you looking for intricate nail art, classic manicures, or budget-friendly options?',
+    content: 'Lovely! 💅 What kind of nail service are you looking for?',
     timestamp: new Date().toISOString(),
     prompts: ['Best in category (Premium)', 'Cost effective (Budget)', 'Nail Art Specialists']
   },
   'Makeup': {
     id: 'ai-makeup',
     role: 'ai',
-    content: 'Glam time! What kind of makeup service do you need?',
+    content: 'Time to glow! 💄 What type of makeup service do you need?',
     timestamp: new Date().toISOString(),
     prompts: ['Bridal Makeover', 'Party Makeup', 'Cost effective (Budget)']
   },
   'Skincare': {
     id: 'ai-skin',
     role: 'ai',
-    content: 'Glowing skin starts here. What is your priority?',
+    content: 'Healthy skin is everything! 🌿 What is your skincare priority?',
     timestamp: new Date().toISOString(),
     prompts: ['Deep Cleansing Facial', 'Anti-Aging Treatments', 'Cost effective (Budget)']
+  },
+  'Spa & Massage': {
+    id: 'ai-spa',
+    role: 'ai',
+    content: 'Time to unwind! 🛁 What kind of spa experience are you after?',
+    timestamp: new Date().toISOString(),
+    prompts: ['Best in category (Premium)', 'Cost effective (Budget)']
+  },
+  'Bridal Couture': {
+    id: 'ai-bridal-main',
+    role: 'ai',
+    content: 'Your big day is everything! 💍 What do you need for the perfect bridal look?',
+    timestamp: new Date().toISOString(),
+    prompts: ['Bridal Makeover', 'Best in category (Premium)']
   },
   // Final recommendations
   'Best in category (Premium)': {
