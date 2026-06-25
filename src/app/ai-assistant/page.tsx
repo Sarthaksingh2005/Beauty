@@ -1,14 +1,13 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Send, Sparkles, Mic } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 import { INITIAL_AI_MESSAGE, AI_RESPONSES, SUGGESTED_PROMPTS } from '@/lib/data/ai-responses';
 import { AIMessage } from '@/types';
 import Rating from '@/components/ui/Rating';
 
 export default function AIAssistant() {
   const [messages, setMessages] = useState<AIMessage[]>([INITIAL_AI_MESSAGE]);
-  const [input, setInput] = useState('');
   const [isTyping, setIsTyping] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -31,7 +30,6 @@ export default function AIAssistant() {
       timestamp: new Date().toISOString()
     };
     setMessages(prev => [...prev, userMsg]);
-    setInput('');
     setIsTyping(true);
 
     // Simulate AI response
@@ -138,34 +136,20 @@ export default function AIAssistant() {
         <div ref={messagesEndRef} />
       </div>
 
-      {/* Input Area */}
+      {/* Input Area (MCQ Only) */}
       <div className="glass-panel p-4 rounded-b-[2.5rem] bg-white border-t border-outline-variant/20">
-        <div className="flex gap-2 mb-3 overflow-x-auto scrollbar-hide pb-2">
-          {SUGGESTED_PROMPTS.slice(0, 3).map(p => (
-            <button key={p} onClick={() => setInput(p)} className="px-3 py-1.5 rounded-full bg-surface-container text-xs font-medium whitespace-nowrap text-on-surface-variant hover:text-primary transition-colors">
+        <p className="text-xs text-center text-on-surface-variant mb-3 font-medium">Choose an option below:</p>
+        <div className="flex flex-wrap gap-2 justify-center">
+          {SUGGESTED_PROMPTS.map(p => (
+            <button 
+              key={p} 
+              onClick={() => handleSend(p)}
+              disabled={isTyping}
+              className="px-4 py-2 rounded-full bg-surface-container-low border border-primary/20 text-sm font-medium text-primary hover:bg-primary-container/10 transition-colors disabled:opacity-50 disabled:cursor-not-allowed shadow-sm"
+            >
               {p}
             </button>
           ))}
-        </div>
-        <div className="flex items-center gap-2">
-          <button className="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors shrink-0">
-            <Mic className="w-5 h-5" />
-          </button>
-          <input
-            type="text"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyDown={(e) => e.key === 'Enter' && handleSend(input)}
-            placeholder="Ask anything about your beauty routine..."
-            className="input-gold flex-1 text-base shadow-sm"
-          />
-          <button 
-            onClick={() => handleSend(input)}
-            disabled={!input.trim() || isTyping}
-            className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white shadow-md disabled:opacity-50 transition-all hover:opacity-90 shrink-0"
-          >
-            <Send className="w-5 h-5 ml-1" />
-          </button>
         </div>
       </div>
     </div>
