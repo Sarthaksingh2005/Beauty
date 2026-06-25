@@ -282,7 +282,7 @@ export const SALONS: Salon[] = [
     badges: [],
     description: 'Top rated unisex salon in Kharghar offering premium hair and beauty services.',
     openHours: 'Mon-Sun: 10am-9pm',
-    phone: '+91 99999 11111',
+    phone: '+91 98201 5193',
     isFavorite: false,
     services: [
       { id: 'sjd1', name: 'Hair Cut', duration: 45, description: 'Basic styling and cut.', price: 500, currency: '₹', category: 'Hair Styling' },
@@ -308,7 +308,7 @@ export const SALONS: Salon[] = [
     badges: ['Top Rated'],
     description: 'A dedicated women\'s beauty parlour in Prabhadevi specializing in facials and styling.',
     openHours: 'Mon-Sun: 11am-8pm',
-    phone: '+91 99999 22222',
+    phone: '+91 99302 7228',
     isFavorite: false,
     services: [
       { id: 'sjd2', name: 'Signature Facial', duration: 60, description: 'Deep cleansing facial.', price: 350, currency: '₹', category: 'Facial' },
@@ -334,7 +334,7 @@ export const SALONS: Salon[] = [
     badges: [],
     description: 'Affordable beauty parlour and academy in Virar.',
     openHours: 'Mon-Sun: 10am-9pm',
-    phone: '+91 99999 33333',
+    phone: '+91 91672 6396',
     isFavorite: false,
     services: [
       { id: 'sjd3', name: 'Party Makeup', duration: 90, description: 'Makeup for special events.', price: 1500, currency: '₹', category: 'Makeup' },
@@ -360,7 +360,7 @@ export const SALONS: Salon[] = [
     badges: ['Top Rated'],
     description: 'Premier tattoo and piercing studio in Ulwe.',
     openHours: 'Mon-Sun: 12pm-10pm',
-    phone: '+91 99999 44444',
+    phone: '+91 98198 8621',
     isFavorite: false,
     services: [
       { id: 'sjd4', name: 'Custom Tattoo', duration: 120, description: 'Custom tattoo design and inking.', price: 2000, currency: '₹', category: 'Tattoo' },
@@ -386,7 +386,7 @@ export const SALONS: Salon[] = [
     badges: [],
     description: 'Family friendly unisex salon in Borivali providing extensive grooming services.',
     openHours: 'Mon-Sun: 9am-9pm',
-    phone: '+91 99999 55555',
+    phone: '+91 99204 7794',
     isFavorite: false,
     services: [
       { id: 'sjd5', name: 'Hair & Beard Spa', duration: 60, description: 'Relaxing spa for men.', price: 800, currency: '₹', category: 'Spa & Massage' },
@@ -412,7 +412,7 @@ export const SALONS: Salon[] = [
     badges: [],
     description: 'Eleven Star offers quality haircuts and skin care for both men and women.',
     openHours: 'Mon-Sun: 10am-10pm',
-    phone: '+91 99999 66666',
+    phone: '+91 98331 6022',
     isFavorite: false,
     services: [
       { id: 'sjd6', name: 'Global Color', duration: 120, description: 'Full hair color.', price: 2500, currency: '₹', category: 'Hair Coloring' },
@@ -438,7 +438,7 @@ export const SALONS: Salon[] = [
     badges: [],
     description: 'A well known salon in the historic Fort area offering great value hair cuts and makeup.',
     openHours: 'Mon-Sat: 10am-8pm',
-    phone: '+91 99999 77777',
+    phone: '+91 98921 5490',
     isFavorite: false,
     services: [
       { id: 'sjd7', name: 'Basic Haircut', duration: 30, description: 'Quick trim and style.', price: 199, currency: '₹', category: 'Hair Styling' },
@@ -464,7 +464,7 @@ export const SALONS: Salon[] = [
     badges: ['Top Rated', 'Premium Salon'],
     description: 'Highly acclaimed makeup artist in Kalyan specializing in flawless bridal makeovers.',
     openHours: 'By Appointment Only',
-    phone: '+91 99999 88888',
+    phone: '+91 93222 7090',
     isFavorite: false,
     services: [
       { id: 'sjd8', name: 'Bridal Makeover', duration: 180, description: 'Complete bridal look.', price: 15000, currency: '₹', category: 'Bridal Couture' },
@@ -490,7 +490,7 @@ export const SALONS: Salon[] = [
     badges: ['Top Rated'],
     description: 'Expert salon for women offering a range of spa, massage and hair treatments in Andheri.',
     openHours: 'Mon-Sun: 10am-8pm',
-    phone: '+91 99999 99999',
+    phone: '+91 98694 1197',
     isFavorite: false,
     services: [
       { id: 'sjd9', name: 'Aroma Massage', duration: 60, description: 'Relaxing aroma oil massage.', price: 1200, currency: '₹', category: 'Spa & Massage' },
@@ -516,7 +516,7 @@ export const SALONS: Salon[] = [
     badges: [],
     description: 'A cozy studio in Seawoods offering affordable and quality hair and skin services.',
     openHours: 'Mon-Sun: 11am-9pm',
-    phone: '+91 99999 00000',
+    phone: '+91 99675 5117',
     isFavorite: false,
     services: [
       { id: 'sjd10', name: 'Women Hair Cut', duration: 40, description: 'Basic trim.', price: 150, currency: '₹', category: 'Hair Styling' },
