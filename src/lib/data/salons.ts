@@ -167,7 +167,7 @@ export const SALONS: Salon[] = [
   },
   {
     id: 'salon-6',
-    name: 'K Prive',
+    name: 'Toni & Guy',
     tagline: 'Crafting Beauty with Precision',
     location: 'Khar West, Mumbai',
     city: 'Mumbai, IN',
@@ -197,7 +197,7 @@ export const SALONS: Salon[] = [
   },
   {
     id: 'salon-7',
-    name: 'BBlunt',
+    name: 'K Prive',
     tagline: 'Less is More. Always.',
     location: 'Andheri West, Mumbai',
     city: 'Mumbai, IN',
@@ -227,7 +227,7 @@ export const SALONS: Salon[] = [
   },
   {
     id: 'salon-8',
-    name: 'Toni & Guy',
+    name: 'BBlunt',
     tagline: 'Science-Led Beauty',
     location: 'Worli, Mumbai',
     city: 'Mumbai, IN',
