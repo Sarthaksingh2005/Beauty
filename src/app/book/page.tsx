@@ -22,7 +22,7 @@ export default function BookAppointment() {
         </Link>
         <div>
           <h1 className="font-heading font-bold text-3xl">Book Appointment</h1>
-          <p className="text-on-surface-variant">Maison de Beauté • London</p>
+          <p className="text-on-surface-variant">Enrich Salon • Mumbai</p>
         </div>
       </div>
 
@@ -66,9 +66,9 @@ export default function BookAppointment() {
               <div className="space-y-4">
                 <h2 className="font-heading font-bold text-xl mb-6">Select a Service</h2>
                 {[
-                  { id: 1, name: 'Balayage Elegance', duration: '120 min', price: '$250' },
-                  { id: 2, name: 'Precision Cut & Style', duration: '60 min', price: '$120' },
-                  { id: 3, name: 'Keratin Treatment', duration: '150 min', price: '$300' },
+                  { id: 1, name: 'Balayage Elegance', duration: '120 min', price: '₹6500' },
+                  { id: 2, name: 'Precision Cut & Style', duration: '60 min', price: '₹2500' },
+                  { id: 3, name: 'Keratin Treatment', duration: '150 min', price: '₹8000' },
                 ].map(s => (
                   <label key={s.id} className="flex items-center gap-4 p-4 rounded-2xl border border-outline-variant/30 hover:bg-surface-container cursor-pointer transition-colors group">
                     <div className="w-5 h-5 rounded-full border-2 border-primary-container group-hover:border-primary flex items-center justify-center">
@@ -127,7 +127,7 @@ export default function BookAppointment() {
                     }`}>
                       <p className="text-xs font-semibold uppercase mb-1">{d.split(' ')[0]}</p>
                       <p className="text-2xl font-bold">{d.split(' ')[1]}</p>
-                      <p className="text-[10px] mt-1 opacity-80">Oct</p>
+                      <p className="text-[10px] mt-1 opacity-80">Jul</p>
                     </button>
                   ))}
                 </div>

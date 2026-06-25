@@ -21,11 +21,11 @@ export default function CheckoutPage() {
             <h2 className="font-heading font-bold text-xl border-b border-outline-variant/20 pb-4">Booking Summary</h2>
             
             <div className="flex gap-4">
-              <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=200" alt="Salon" className="w-20 h-20 rounded-2xl object-cover" />
+              <img src="https://blg.luzo.app/uploads/Screenshot_2025_07_14_135337_cdeaf5cd00.png" alt="Salon" className="w-20 h-20 rounded-2xl object-cover" />
               <div>
-                <h3 className="font-bold text-lg">Maison de Beauté</h3>
+                <h3 className="font-bold text-lg">Enrich Salon</h3>
                 <p className="text-sm text-on-surface-variant flex items-center gap-1 mt-1">
-                  <MapPin className="w-4 h-4 text-primary" /> Mayfair, London
+                  <MapPin className="w-4 h-4 text-primary" /> Bandra West, Mumbai
                 </p>
               </div>
             </div>
@@ -36,11 +36,11 @@ export default function CheckoutPage() {
                   <p className="font-bold">Balayage Elegance</p>
                   <p className="text-sm text-on-surface-variant">with Elena R. • 120 min</p>
                 </div>
-                <p className="font-bold">$250.00</p>
+                <p className="font-bold">₹6500.00</p>
               </div>
               <div className="flex items-center gap-2 text-sm text-on-surface-variant border-t border-outline-variant/20 pt-4">
                 <Calendar className="w-4 h-4 text-primary" />
-                <span className="font-semibold text-on-surface">Oct 4, 2023 at 02:30 PM</span>
+                <span className="font-semibold text-on-surface">Jul 4, 2026 at 02:30 PM</span>
               </div>
             </div>
           </div>
@@ -51,8 +51,8 @@ export default function CheckoutPage() {
             
             <label className="flex items-center justify-between p-4 rounded-2xl border-2 border-primary bg-primary/5 cursor-pointer">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-xl shadow-sm"></div>
-                <span className="font-bold">Apple Pay</span>
+                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-xl shadow-sm">🇮🇳</div>
+                <span className="font-bold">UPI</span>
               </div>
               <div className="w-5 h-5 rounded-full border-2 border-primary flex items-center justify-center">
                 <div className="w-2.5 h-2.5 rounded-full bg-primary" />
@@ -79,16 +79,16 @@ export default function CheckoutPage() {
             <div className="space-y-4 text-sm mb-6">
               <div className="flex justify-between">
                 <span className="text-on-surface-variant">Subtotal</span>
-                <span className="font-semibold">$250.00</span>
+                <span className="font-semibold">₹6500.00</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-on-surface-variant">Tax</span>
-                <span className="font-semibold">$14.20</span>
+                <span className="font-semibold">₹1170.00</span>
               </div>
               <div className="divider-gold" />
               <div className="flex justify-between items-center">
                 <span className="font-bold text-lg">Total Paid</span>
-                <span className="font-bold text-2xl text-primary">$264.20</span>
+                <span className="font-bold text-2xl text-primary">₹7670.00</span>
               </div>
             </div>
 

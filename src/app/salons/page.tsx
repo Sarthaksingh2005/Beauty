@@ -30,7 +30,7 @@ export default function SalonsPage() {
             <MapPin className="w-5 h-5 text-outline" />
             <input 
               type="text" 
-              placeholder="London, UK" 
+              placeholder="Mumbai, IN" 
               className="bg-transparent border-none outline-none w-full text-on-surface placeholder:text-outline-variant font-medium"
             />
           </div>
