@@ -17,7 +17,7 @@ export default function UserDashboard() {
           className="w-24 h-24 rounded-full border-4 border-white shadow-lg object-cover"
         />
         <div>
-          <h1 className="font-heading font-bold text-3xl">Welcome back, Sarah!</h1>
+          <h1 className="font-heading font-bold text-3xl">Welcome back, Rishita!</h1>
           <p className="text-on-surface-variant">Lumière Premium Member</p>
         </div>
       </div>
@@ -31,7 +31,7 @@ export default function UserDashboard() {
             <div className="flex items-center gap-2 text-on-surface-variant font-medium mb-2">
               <Wallet className="w-5 h-5" /> Lumière Wallet
             </div>
-            <p className="font-heading font-bold text-4xl text-on-surface mb-1">$450.00</p>
+            <p className="font-heading font-bold text-4xl text-on-surface mb-1">₹4,500.00</p>
             <p className="text-xs text-on-surface-variant">Available Balance</p>
             <button className="mt-6 w-full py-2 rounded-xl bg-white text-primary font-semibold text-sm hover:shadow-md transition-all">
               Add Funds
