@@ -102,20 +102,21 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {CATEGORIES.map((cat, i) => (
-              <motion.div
-                key={cat.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.05 }}
-                className="glass-card p-6 flex flex-col items-center justify-center text-center gap-3 cursor-pointer group"
-              >
-                <div className="text-4xl group-hover:scale-110 transition-transform duration-300">{cat.icon}</div>
-                <div>
-                  <h3 className="font-heading font-semibold text-on-surface group-hover:text-primary transition-colors">{cat.name}</h3>
-                  <p className="text-xs text-on-surface-variant mt-1">{cat.count} {cat.count === 1 ? 'Salon' : 'Salons'} in Mumbai</p>
-                </div>
-              </motion.div>
+              <Link key={cat.id} href={`/salons?category=${encodeURIComponent(cat.name)}`}>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.05 }}
+                  className="glass-card p-6 flex flex-col items-center justify-center text-center gap-3 cursor-pointer group h-full"
+                >
+                  <div className="text-4xl group-hover:scale-110 transition-transform duration-300">{cat.icon}</div>
+                  <div>
+                    <h3 className="font-heading font-semibold text-on-surface group-hover:text-primary transition-colors">{cat.name}</h3>
+                    <p className="text-xs text-on-surface-variant mt-1">{cat.count} {cat.count === 1 ? 'Salon' : 'Salons'} in Mumbai</p>
+                  </div>
+                </motion.div>
+              </Link>
             ))}
           </div>
         </div>
